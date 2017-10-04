@@ -10,7 +10,7 @@ Author URI:
 require('weather_api.php');
 
 function get_weather_details($location, $units) {
-	$appid = '9a1ce1a0a8ddb385bb31bd659c1202fb';
+	$appid = '[Your APPID from openweathermap.org]';
 
   $url = API_HOST . '/forecast?q=' . $location . '&units=' . $units .'&APPID=' . $appid .'';
   $body = null;
